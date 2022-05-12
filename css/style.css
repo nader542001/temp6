@@ -1,0 +1,700 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 15px 200px;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: yellow;
+}
+.img{
+    font-size: 30px;
+    font-weight: 1000;
+    text-transform: capitalize;
+}
+span.logo{
+    color: red;
+}
+.navgation a{
+    color: yellowgreen;
+    font-size: 15px;
+    margin: 0 20px;
+    text-transform: capitalize;
+    position: relative;
+    transition: 0.8s ease;
+}
+.navgation a:hover{
+    color: orange;
+}
+.navgation a::after{
+    position: absolute;
+    content: "";
+    display: inline-block;
+    /* top: 130%;
+    left: 10%;
+    width: 90%; */
+    height: 3px;
+    background-color: #6295ff;
+    transition: 0.8s ease;
+}
+.navgation a:hover::after{
+    top: 130%;
+    left: 6%;
+    width: 90%;
+    transition: 0.8s ease;
+}
+section{
+    padding: 100px 200px; 
+}
+.home{
+    width: 100%;
+   min-height: 100vh;
+    display: flex;
+    align-items: center; 
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.home-content{
+    width: 100%; 
+    min-height: 100%; 
+   align-items: center;
+   left: 1%;
+   text-align: center;
+   position: relative;
+} 
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+}
+.home-title{
+    text-transform: capitalize;
+    font-size: 60px;
+    color: red;
+    margin-bottom: 10px;
+}
+.home-title-desc{
+    font-size: 15px;
+    color: #fff;
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 30px;
+}
+.button{
+    margin-top: 20px;
+}
+.btn{
+    width: 140px;
+    height: 50px;
+    font-size: 18px;
+    background-color: yellowgreen;
+    transition: all .6s ease;
+    border-radius: 10px;
+    color: #fff;
+    text-transform: capitalize;
+    border: none;
+}
+.btn:hover{
+    transform:scale(1.2);
+    background-color: yellow;
+    color: #000;
+    box-shadow: rgba(0, 0, 0, .8);
+    
+}
+.btn-learn{
+    margin-right: 10px;
+    background-color: orange;
+    color: #000;
+    
+}
+.about{
+    height: 80vh;
+    background-image: url(../images/wood_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+.about-title{
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    text-transform: capitalize;
+}
+.line{
+    display:block;
+    width: 120px;
+    height: 4px;
+    background-color: rgb(236, 141, 16);
+    margin: auto;
+    transition: 0.5s ease;
+}
+.about-title:hover .line{
+    width: 180px;
+}
+.about-content{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: center; */
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.content{
+    margin-left: 90px;
+}
+.content-img{
+    width: 380%;
+    
+}
+img.content-img{
+    margin-left:-100px ;
+}
+.content-title{
+    color: #fff;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+.content-title span{
+    color: rgb(241, 145, 20);
+}
+.content-title2{
+    color: #fff;
+    text-align: center;
+    margin: 10px 0;
+}
+.content-desc{
+    color: gray;
+    font-size: 17px;
+    word-spacing: 4px;
+    line-height: 35px;
+}
+.button2 .btn2{
+    margin-left: 250px;
+    margin-top: 30px;
+    text-align: center;
+    background-color: yellowgreen;
+    width: 160px;
+    height: 60px;
+    font-size:19px ;
+    border-radius: 5%;
+    border: none;
+    transition: 0.6s ease;
+    
+}
+.button2 .btn2:hover{
+    color: #000;
+    background-color: yellow;
+    transform: scale(1.2);
+}
+.services{
+    width: 100%;
+    min-height: 40vh;
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.services-title{
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+.services-desc{
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 28%;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.menu{
+    background-image: url(../images/wood_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.menu-desc{
+    color: gray;
+    font-size: 20px;
+    margin-top: 25px;
+}
+.menu-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+  
+    
+}
+.content2 img{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    
+}
+.content2{
+   
+        width: 30%;
+        margin-top: 100px;
+        margin-left: 30px;
+        position: relative;
+        overflow: hidden;
+        -webkit-box-shadow: 0 0 10px #ccc;
+        box-shadow: 0 0 10px #ccc;
+        transition: all 1s;
+    
+}
+
+.inside-content{
+        position: absolute;
+        text-align: left;
+        left: 0;
+        right: 0;
+        bottom: -100%;
+        height: 100%;
+        background: rgba(207, 166, 113, .8);
+        padding: 12px 12px;
+        -webkit-transition: all .4s ease;
+        transition: all .4s ease;
+    }
+    .inside-title{
+        font-size: 30px;
+        text-transform: capitalize;
+        margin-top: 3%;
+        margin-bottom: 15px;
+        color: #fff;
+    }
+    .inside-title-desc{
+        font-size: 20px;
+        color: #fff;
+        text-transform: capitalize;
+        margin-bottom: 15px;
+    }
+    .small-title{
+        color: #fff;
+        margin-top: 10px;
+    }
+    /* .content2:hover{
+        transform: rotate(720deg);
+    } */
+    .content2:hover .inside-content{
+       bottom: 0px;   
+    }
+ /* .icon i{
+    display: inline-block;
+    padding: 10px;
+     background-color: rgb(255, 166, 0); 
+    color: aliceblue;
+    
+}
+.content2::after{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.5s ease;
+    
+}
+.content2:hover:after{
+    width: 100%;
+    height: 100%;
+    
+}
+.content2:hover .icon{
+    visibility: visible;
+    z-index: 1;
+  
+}  */
+  
+
+.gallery{
+    height: 170vh;
+    background-image: url(../images/wood_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+/* .gallery-content{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.content3 img{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.content3{
+    width: 490px;
+    background-color: aqua;
+    margin-top: 70px;
+    position: relative;
+    margin-right: 40px;
+    transition: 0.9s ease;
+    -webkit-box-shadow: 0 0 10px #ccc;
+     box-shadow: 0 0 10px #ccc;
+}
+.inside-content3{
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: -100%;
+    height: 100%;
+    background: rgba(207, 166, 113, .8);
+    padding: 12px 12px;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+.inside-title2{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: 10%;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.inside-title-desc2{
+    font-size: 20px;
+    color: #fff;
+    text-transform: capitalize;
+} */
+/* .content2:hover{
+    transform: rotate(720deg);
+} */
+.gallery-content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    margin: auto;
+}
+.content3{
+    width: 31%;
+    margin-top: 100px;
+    margin-left: 30px;
+    position: relative;
+    overflow: hidden;
+    -webkit-box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #ccc;
+    transition: all 1s;
+}
+.content3 img{
+    width: 500px;
+    height: 300px;
+}
+.inside-content3{
+    position: absolute;
+    text-align: center;
+    left: -100%;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(19, 18, 17, 0.8);
+    padding: 12px 12px;
+    -webkit-transition: all .4s ease;
+    transition: all .3s ease;
+    transition-delay: 1s;
+}
+.inside-content3-title{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: 10%;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.inside-title{
+    font-size: 20px;
+    color: #fff;
+    text-transform: capitalize;
+}
+.content3:hover{
+    transform: scale(1.2);
+}
+.content3:hover .inside-content3{
+   left: 0px;   
+}
+
+/* .content2:hover .inside-content{
+   bottom: 0px;   
+}
+.content3:hover{
+    transform: rotate(1080deg)
+   
+} */
+.Teams{
+    background-image: url(../images/wood_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.team-content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    margin: auto;
+}
+.content4{
+    width: 31%;
+    margin-top: 100px;
+    margin-left: 30px;
+    position: relative;
+    overflow: hidden;
+    -webkit-box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #ccc;
+    transition: all 1s;
+}
+.content4 img{
+    width: 500px;
+    height: 300px;
+}
+.inside-content4{
+    position: absolute;
+    text-align: center;
+    right: 0;
+    left: 0;
+    top: -100%;
+    height: 100%;
+    background: rgba(33, 26, 56, 0.8);
+    padding: 12px 12px;
+    -webkit-transition: all .4s ease;
+    transition: all .5s ease;
+    /* transition-delay: 1s; */
+}
+.inside-content4-title{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: 10%;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.inside-title{
+    font-size: 20px;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.content4:hover .inside-content4{
+   top: 0px;   
+}
+/* .teams-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60%;
+    margin: auto;
+   
+} */
+/* img{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.content4{
+    width: 220px;
+    background-color: aqua;
+    margin-top: 70px;
+    position: relative;
+    margin-right: 30px;
+    transition: .5s ease;
+} */
+/* .icon{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    font-size: 30px;
+    visibility: hidden;
+    transition-delay: 0.7s ease ;
+    
+}
+.icon i{
+    display: inline-block;
+    padding: 10px;
+    background-color: aqua;
+    color: aliceblue;
+}
+.content4::after{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, .8);
+    transition: 0.5s ease;
+}
+.content4:hover:after{
+    width: 100%;
+    height: 100%;
+}
+.content4:hover .icon{
+    visibility: visible;
+    z-index: 1; */
+  
+.small-icon{
+    font-size: 40px;
+    color: #fff;
+    margin-left: 20px;
+    background-color: #3a6cf4;
+    padding: 8px;
+    transition: all .4s ease;
+}
+.small-icon:hover{
+    color: #3a6cf4;
+    background-color: #fff;
+    transform: scale(1.1);
+}
+.small-icon:hover{
+    transform: scale(1.2);
+}
+/* .footer{
+    background-color: #000010;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-title{
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #fff;
+
+}
+.footer-title span{
+    color: #3a6cf4;
+}
+.social-icons{
+    color: #3a6cf4;
+    font-size: 3em;
+    text-align: center;
+}
+i{
+    transition: 0.5s ease;
+}
+.social-icons i:hover{
+    transform: scale(1.3);
+    color: blue;
+} */
+.section-three{
+    background-image: url(../images/wood_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+form{
+    margin-top: 40px;
+}
+.section-three h3{
+    font-size: 1.5em;
+    padding-bottom: 15px;
+}
+.section-three .inputs {
+    display: block;
+    background-color: #ccc;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 14px;
+    resize: none;
+}
+textarea{
+    background-color: #ccc;
+}
+.section-three input[type="button"] {
+    padding: 7px;
+    padding-left: 0;
+    margin-top: 10px;
+    width: 250px;
+    background-color: rgb(231, 25, 25);
+    cursor: pointer;
+    border: none;
+    font-size: 1.2em;
+    transition: 1s;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: white;
+}
+.section-three input[type="button"]:hover{
+    border-bottom: 5px solid black;
+    background-color: rgb(133, 243, 8);
+    color: black;
+    font-weight: 400;
+}
+
+/*Section Three End*/
+
+/*Footer Start*/
+
+.all hr {
+    border: 1px solid;
+}
+footer {
+    background-color: #000016;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    color: #94140b;
+}
+footer li {
+    text-align: left;
+    padding: 3px 10px;
+}
+footer p {
+    font-size: 20px;
+}
+a i{
+  margin-bottom: 30px;
+  margin-top: -20px;
+  font-size: 50px;
+  margin-left: 15px;
+  background-color: #3a6cf4;
+  color: #fff;
+  padding: 10px;
+  transition: all .5s ease;
+}
+a i:hover{
+    background-color: #fff;
+    color: #3a6cf4;
+    transform: scale(1.2);
+}
+
+/*Footer End*/
+
+
+
